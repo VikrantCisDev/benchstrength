@@ -1,0 +1,152 @@
+@media (max-width: 1640px) and (min-width: 1400px) {
+    .flex-xxl-nowrap {
+        flex-wrap: wrap !important;
+    }
+}
+
+@media (max-width: 1440px) {
+    table tbody tr.target-font td {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .statusWrapper h5 {
+        width: 100%;
+    }
+
+    .statusBox {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1199px) {
+    .custom-row-cols-lg-7 .col {
+        width: 14.28571429%;
+        flex: 0 0 14.28571429%;
+        max-width: 14.28571429%;
+    }
+    
+} 
+
+
+@media (max-width: 991px) {
+    #toggleBtn {
+        display: block;
+
+    }
+
+    .sidebar {
+        left: -320px;
+        top: 60px;
+    }
+
+    .main {
+        margin-left: 0;
+    }
+
+    .toggle-sidebar .sidebar {
+        left: 0;
+        top: 60px;
+    }
+
+    .toggle-sidebar .main {
+        margin-left: 0;
+    }
+
+    .profle-content {
+        display: none;
+    }
+
+    .profile-dropdown {
+        gap: 8px;
+    }
+
+    .rightheaderBar {
+        gap: 8px;
+    }
+
+    .angle-down,
+    .viewSec {
+        display: none;
+    }
+
+    .header {
+        gap: 16px;
+    }
+
+    .viewSecMob {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .header {
+        height: 60px;
+    }
+
+    .main {
+        margin-top: 60px;
+    }
+
+    .headerIcons {
+        gap: 8px;
+    }
+
+    .logo img {
+        max-width: 140px;
+    }
+
+    .header {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .viewSecMob span {
+        font-size: 14px;
+    }
+
+    .profile-dropdown img {
+        max-width: 32px;
+    }
+
+    #toggleBtn svg {
+        width: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .logo img {
+        max-width: 125px;
+    }
+
+    .white-box h5 {
+        font-size: 18px;
+    }
+
+    .main {
+        padding: 20px 12px;
+    }
+
+    .head-btn img {
+        width: 28px;
+    }
+
+    .rightheaderBar {
+        gap: 4px;
+    }
+
+    .headerIcons {
+        gap: 4px;
+    }
+
+    .viewSecMob img {
+        width: 20px;
+    }
+
+    .settingIcon {
+        display: none;
+    }
+}

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./css/style.css" rel="stylesheet" />
+  <link href="./css/owl.carousel.min.css" rel="stylesheet" />
+  <link href="./css/responsive.css" rel="stylesheet" />
+  <title>:: Home ::</title>
+</head>
+
+<body class="pinkBg">
+  <!-- ======= Header ======= -->
+
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="./images/logo.svg" alt="logo" />
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div>
+
+    <button id="toggleBtn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 14 11" fill="none">
+        <path
+          d="M0 1.43219C0.0354363 1.04239 0.248054 0.829773 0.637854 0.794337H11.2688C11.6586 0.829773 11.8712 1.04239 11.9066 1.43219C11.8712 1.82199 11.6586 2.03461 11.2688 2.07004H0.637854C0.248054 2.03461 0.0354363 1.82199 0 1.43219ZM1.70094 5.68455C1.73638 5.29475 1.949 5.08213 2.3388 5.0467H12.9697C13.3595 5.08213 13.5721 5.29475 13.6076 5.68455C13.5721 6.07435 13.3595 6.28697 12.9697 6.3224H2.3388C1.949 6.28697 1.73638 6.07435 1.70094 5.68455ZM11.9066 9.93691C11.8712 10.3267 11.6586 10.5393 11.2688 10.5748H0.637854C0.248054 10.5393 0.0354363 10.3267 0 9.93691C0.0354363 9.54711 0.248054 9.33449 0.637854 9.29906H11.2688C11.6586 9.33449 11.8712 9.54711 11.9066 9.93691Z"
+          fill="black" />
+      </svg>
+    </button>
+
+    <nav class="header-nav ms-auto">
+      <div class="rightheaderBar">
+        <div class="viewSec">
+          <span class="w-100 fw-bold">View as</span>
+          <select class="form-select" aria-label="Default select example">
+            <option selected="">BenchStrength</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <div class="viewSecMob">
+          <span class="w-100 fw-bold">View as</span>
+          <img src="./images/angle-down.svg" alt="angle-down" />
+        </div>
+
+        <div class="headerIcons">
+          <div class="dropdown-container">
+            <button class="border-0 head-btn">
+              <img src="./images/notification.svg" alt="notification" />
+            </button>
+          </div>
+
+          <div class="dropdown-container">
+            <button class="border-0 head-btn">
+              <img src="./images/setting.svg" class="settingIcon" alt="setting" />
+            </button>
+          </div>
+        </div>
+        <div class="profile-dropdown">
+          <img src="./images/avatar.svg" alt="avatar" />
+          <div class="profle-content">
+            <p class="fw-semibold mb-1">Neil Ja</p>
+            <span class="font-14 fw-medium"> Team Manager</span>
+          </div>
+          <img src="./images/angle-down.svg" alt="angle-down" class="angle-down" />
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ======= Header ======= -->
+
+  <!-- ======= Sidebar ======= -->
+
+  <aside id="sidebar " class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+          <img src="./images/dashboard.svg" alt="dashboard" />
+          <span>Dashboard</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link dropdown-toggle justify-content-between">
+          <div>
+            <img src="./images/performance.svg" alt="performance" />
+            <span class="ms-2">Performance & Insight</span>
+          </div>
+          <img src="./images/angle-down.svg" alt="angle-down" class="downArrow" />
+        </a>
+        <ul class="nav-content">
+          <li>
+            <a href="#">
+              <span>Performance</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Churn</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Activity Log</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link dropdown-toggle justify-content-between">
+          <div>
+            <img src="./images/team.svg" alt="team" />
+            <span class="ms-2">Team Management</span>
+          </div>
+          <img src="./images/angle-down.svg" alt="angle-down" class="downArrow" />
+        </a>
+        <ul class="nav-content">
+          <li>
+            <a href="#">
+              <span>Hierarchy</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Team Member behind</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Workflow</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link dropdown-toggle justify-content-between">
+          <div>
+            <img src="./images/dashboard.svg" alt="updates & communication" />
+            <span class="ms-2">updates & communication</span>
+          </div>
+          <img src="./images/angle-down.svg" alt="angle-down" class="downArrow" />
+        </a>
+        <ul class="nav-content">
+          <li>
+            <a href="#">
+              <span>Newsfeed</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Newsletter</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="sidebar-nav downList">
+     
+
+      
+      <li class="nav-item">
+        <a class="nav-link dropdown-toggle justify-content-between">
+          <div>
+            <img src="./images/setting.svg" alt="setting" />
+            <span>Settings</span>
+          </div>
+          <img src="./images/angle-down.svg" alt="angle-down" class="downArrow" />
+        </a>
+        <ul class="nav-content ps-3">
+          <li class="nav-item">
+            <a href="#">
+              <span>Data Upload</span>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a href="#">
+              <span>Workflow Settings</span>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a href="#">
+              <span>Upload Hierarchy </span>
+            </a>
+          </li>
+          <li class="nav-item  active-link">
+            <a href="#">
+              <span>Company Profile</span>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a href="#">
+              <span>Application</span>
+            </a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+          <img src="./images/logout.svg" alt="logout" />
+          <span>Logout</span>
+        </a>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- ======= Sidebar ======= -->
+
+  <!-- ======= Main ======= -->
+
+  <main id="main" class="main">
+    <div class="dashboard-title mb-4">
+      <h4 class="fw-bold">Data Upload</h4>
+    </div>
+
+    <div class="row">
+
+      <div class="col-xxl-12">
+
+        <div class="white-box mb-4">
+          <div class="selectFileInput text-start mb-4">
+            <div class="selectedFileUpdate">
+              <div class="d-flex align-items-center gap-1">
+                <img src="./images/xls.png" alt="fileType" class="img-fluid">
+                File document name.xls
+              </div>
+              <a href="#" class="close-btn cursor-pointer ">
+                <img src="./images/close.svg" alt="close">
+              </a>
+            </div>
+          </div>
+          <div class="text-end">
+            <a href="#" class="dark-btn">Save</a>
+          </div>
+        </div>
+
+
+        <div class="white-box mb-3">
+          <label class="mb-4 fw-bold">Data</label>
+
+
+          <div class="table-wrapper">
+            <table class="employeesDataTable table">
+              <thead>
+                <tr>
+                  <th>Employee ID</th>
+                  <th>Name</th>
+                  <th>KPI 1</th>
+                  <th>Target Attainment</th>
+                  <th>Actual Attainment</th>
+                  <th>KPI 2</th>
+                  <th>Target Attainment</th>
+                  <th>Actual Attainment</th>
+                  <th>KPI 3</th>
+                  <th>Target Attainment</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>EMP2022012</td>
+                  <td>Jacob Jones</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+                  <td>150%</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+                  <td>150%</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+
+                </tr>
+                <tr>
+                  <td>EMP2022012</td>
+                  <td>Jacob Jones</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+                  <td>150%</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+                  <td>150%</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+
+                </tr>
+                <tr>
+                  <td>EMP2022012</td>
+                  <td>Jacob Jones</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+                  <td>150%</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+                  <td>150%</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+
+                </tr>
+                <tr>
+                  <td>EMP2022012</td>
+                  <td>Jacob Jones</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+                  <td>150%</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+                  <td>150%</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+
+                </tr>
+                <tr>
+                  <td>EMP2022012</td>
+                  <td>Jacob Jones</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+                  <td>150%</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+                  <td>150%</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+
+                </tr>
+                <tr>
+                  <td>EMP2022012</td>
+                  <td>Jacob Jones</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+                  <td>150%</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+                  <td>150%</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+
+                </tr>
+                <tr>
+                  <td>EMP2022012</td>
+                  <td>Jacob Jones</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+                  <td>150%</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+                  <td>150%</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+
+                </tr>
+                <tr>
+                  <td>EMP2022012</td>
+                  <td>Jacob Jones</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+                  <td>150%</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+                  <td>150%</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+
+                </tr>
+                <tr>
+                  <td>EMP2022012</td>
+                  <td>Jacob Jones</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+                  <td>150%</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+                  <td>150%</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+
+                </tr>
+                <tr>
+                  <td>EMP2022012</td>
+                  <td>Jacob Jones</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+                  <td>150%</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+                  <td>150%</td>
+                  <td>Metric to measure</td>
+                  <td>200%</td>
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+
+          <div class="pagination-container">
+            <div class="paginationLeft">
+
+              <span>Show</span>
+
+              <select name="pageItemShow" id="pageItemShow" class="form-select">
+                <option value="1">1</option>
+                <option value="1">1</option>
+                <option value="1">1</option>
+                <option value="1">1</option>
+                <option value="1">1</option>
+              </select>
+              <span class="totalItems">Entries of 57 entries</span>
+            </div>
+            <div class="paginationRight justify-content-end">
+              <button id="prevPage" class="prevBtn light-btn"><span>Previous</span></button>
+              <ul class="pagination p-0 m-0">
+                <li class="page-item active"><a href="#" class="text-decoration-none">1</a></li>
+                <li class="page-item"><a href="#" class="text-decoration-none"> 2 </a></li>
+                <li class="page-item"><a href="#" class="text-decoration-none"> 3 </a></li>
+                <li class="page-item"><a href="#" class="text-decoration-none"> 4 </a></li>
+                <li class="page-item"><a href="#" class="text-decoration-none"> 5 </a></li>
+                <li class="page-item"><a href="#" class="text-decoration-none"> 6 </a></li>
+              </ul>
+              <button id="nextPage" class="nextBtn border-0 dark-btn"><span>Next</span></button>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ======= Main ======= -->
+
+  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="./js/custom.js"></script>
+</body>
+
+</html>
