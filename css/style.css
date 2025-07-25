@@ -251,12 +251,12 @@ p {
 }
 
 
-.dropdown-menu {
+/* .dropdown-menu {
     display: none;
     opacity: 0;
     transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
-}
+} */
 
 /* Custom class added via jQuery */
 .dropdown-active {
@@ -633,7 +633,7 @@ table.employeesDataTable td {
     padding: 12px 16px;
     position: relative;
     white-space: nowrap;
-    z-index: 0;
+    /* z-index: 0; */
 }
 
 
@@ -988,7 +988,7 @@ span.chooseFileBtn {
 
 
 .nav-pills .nav-link {
-    background-color: var(--light-grey);
+    background-color: var(--light-grey1);
     color: var(--black);
 }
 
@@ -1071,6 +1071,13 @@ td a.statusPend {
     padding: 4px 8px;
 }
 
+td a.statusScheduled {
+    color: #0053AD;
+    font-weight: 500;
+    background-color: #CCE4FF !important;
+    padding: 4px 8px;
+}
+
 
 
 table.employeesDataTableNested {
@@ -1104,7 +1111,7 @@ table.employeesDataTableNested td {
 
 
 table.employeesDataTableNested tbody tr:nth-child(2n) td {
-    background-color: #EEEEEE;
+    background-color: var(--light-grey1);
 }
 
 
@@ -1154,4 +1161,103 @@ table.employeesDataTableNested tbody tr:nth-child(2n) td {
 .employeesDataTable-nested>tbody>tr>td table tr:nth-child(2n)>td {
     /* background: #efefef; */
     background: var(--white);
+}
+
+/* 24/07/25 CSS */
+
+.icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+}
+
+.no-bottom-radius {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+    min-width: 120px;
+}
+
+
+.custom-check .form-check-input {
+    background-color: var(--white);
+    border: 2px solid var(--red);
+    width: 24px;
+    height: 24px;
+}
+
+.custom-check .form-check-input:checked {
+    background-color: var(--white);
+    border-color: var(--red);
+}
+
+.custom-check .form-check-input:checked::before {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 13px;
+    border: solid var(--red);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    position: relative;
+    top: 2px;
+    left: 6px;
+}
+
+.form-check-input:checked {
+    background-image: none !important;
+}
+
+
+.dropdown-selected {
+    cursor: pointer;
+    border-radius: 12px;
+    min-width: 200px;
+}
+
+.dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    margin-top: 5px;
+    z-index: 999;
+    display: none;
+}
+
+.dropdown-list.show {
+    display: block;
+}
+
+.dropdown-containerSelect .dropdown-list .dropdown-item.active,.dropdown-containerSelect .dropdown-list .dropdown-item:active{
+    color: var(--black);
+}
+
+.dropdown-item {
+    padding: 12px;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 0;
+    height: 1px;
+    background-color: var(--light-grey1);
+}
+
+.dropdown-item:hover {
+    background-color: var(--light-grey);
+    border-radius: 12px;
 }

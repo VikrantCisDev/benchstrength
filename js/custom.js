@@ -42,3 +42,26 @@ document.querySelectorAll(".NestedToggle-btn").forEach(btn => {
     }
   });
 });
+
+
+
+const selectedField = document.querySelector(".dropdown-selected");
+const dropdownMenuSel = document.querySelector(".dropdown-list");
+const slectedItems = document.querySelectorAll(".dropdown-item");
+
+selectedField.addEventListener("click", () => {
+  dropdownMenuSel.classList.toggle("show");
+});
+
+slectedItems.forEach(item => {
+  item.addEventListener("click", () => {
+    selectedField.textContent = item.textContent
+    dropdownMenuSel.classList.remove("show");
+  });
+});
+
+document.addEventListener("click", function (event) {
+  if (!event.target.closest(".dropdown-containerSelect")) {
+    dropdownMenuSel.classList.remove("show");
+  }
+});

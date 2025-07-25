@@ -27,8 +27,8 @@
         flex: 0 0 14.28571429%;
         max-width: 14.28571429%;
     }
-    
-} 
+
+}
 
 
 @media (max-width: 991px) {
@@ -114,6 +114,19 @@
 
     #toggleBtn svg {
         width: 20px;
+    }
+
+    .custom-check .form-check-input {
+        width: 20px;
+        height: 20px;
+    }
+
+    .custom-check .form-check-input:checked::before {
+        width: 6px;
+        height: 11px;
+        border-width: 0 2.5px 2.5px 0;
+        top: 1px;
+        left: 5px;
     }
 }
 
